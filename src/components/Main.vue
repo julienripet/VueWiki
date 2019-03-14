@@ -39,7 +39,7 @@ export default{
             let URL = "https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?action=opensearch&format=json&search=";
             let safeTextRequest = encodeURI(recherche)
 
-            let myRequest = request.open('GET',URL+safeTextRequest,true);
+            let myRequest = request.open('GET',URL+safeTextRequest,false);
             console.log(URL+safeTextRequest)    
             request.onload= function(e){
                 if(request.readyState==4 && request.status==200){
