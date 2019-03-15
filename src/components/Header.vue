@@ -32,8 +32,13 @@ export default {
 
 <style scoped>
   header{
-    margin: 20px;
-  }
+    background-color: lightgrey;
+    max-width: 900px;
+    position: relative;
+    margin: 20px auto;
+    padding:20px;
+    border-radius: 5px;
+}
 
   h1{
     margin: 20px auto;
